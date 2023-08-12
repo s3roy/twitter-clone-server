@@ -1,0 +1,34 @@
+ 
+# Node related
+node_modules/
+npm-debug.log
+yarn-error.log
+yarn.lock
+package-lock.json
+
+# OS related
+.DS_Store
+Thumbs.db
+
+# Editor related
+*.swp
+*.swo
+*.sublime-*
+.vscode/
+
+# Runtime data
+logs/
+pids/
+*.pid
+*.seed
+*.log
+
+# dotenv environment variables file
+.env
+
+# Database storage
+*.sqlite
+
+# GraphQL generated files
+schema.graphql
+schema.json
