@@ -51,6 +51,7 @@ const queries = {
         if (!id)
             return null;
         const user = yield db_1.prismaClient.user.findUnique({ where: { id } });
+        return user;
     }),
 };
 exports.resolvers = { queries };

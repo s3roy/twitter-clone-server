@@ -67,6 +67,7 @@ const queries = {
     if (!id) return null;
 
     const user = await prismaClient.user.findUnique({ where: { id } });
+    return user;
   },
 };
 
