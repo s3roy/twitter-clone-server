@@ -33,7 +33,7 @@ export async function initServer() {
         ...User.resolvers.queries,
         ...Tweet.resolvers.queries,
       },
-      Mutations: {
+      Mutation: {
         ...Tweet.resolvers.mutations,
       },
       ...Tweet.resolvers.extraResolvers,

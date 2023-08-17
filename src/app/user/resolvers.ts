@@ -47,7 +47,7 @@ const queries = {
           email: data.email,
           firstName: data.given_name,
           lastName: data.family_name,
-          profileImageUrl: data.picture,
+          profileImageURL: data.picture,
         },
       });
     }

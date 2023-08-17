@@ -33,7 +33,7 @@ const queries = {
                     email: data.email,
                     firstName: data.given_name,
                     lastName: data.family_name,
-                    profileImageUrl: data.picture,
+                    profileImageURL: data.picture,
                 },
             });
         }
@@ -54,4 +54,9 @@ const queries = {
         return user;
     }),
 };
-exports.resolvers = { queries };
+const extraResolvers = {
+    User: {
+        tweets: (parent) => db_1.prismaClient.tweet.findMany({ where: { author: { id: parent.id } } }),
+    },
+};
+exports.resolvers = { queries, extraResolvers };
