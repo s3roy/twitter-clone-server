@@ -6,6 +6,8 @@ export const types = `#graphql
         lastName:String
         email:String!
         profileImageUrl:String
+
+        tweets:[Tweet]
     }
 
 `;
